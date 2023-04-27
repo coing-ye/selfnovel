@@ -7,3 +7,7 @@ exports.indexpage = (req,res) => {
 exports.getsignin = (req,res) =>{
     res.render('signin');
 };
+
+exports.getsignup = (req,res) =>{
+    res.render('signup');
+}
