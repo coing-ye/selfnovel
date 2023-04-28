@@ -10824,3 +10824,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.cd-signup {
+    padding: .6em 1em;
+    border-radius: 50em ;
+    background-color: #2f889a;
+    border: none ;
+    margin:0 5px;
+    font-family: 'PT Sans', sans-serif;
+    
+  }
+
+.cd-signin {
+    padding: .6em 1em;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 50em ;
+    margin:0 5px;
+    font-family: 'PT Sans', sans-serif;
+  }
