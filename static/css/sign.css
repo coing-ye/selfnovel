@@ -52,6 +52,7 @@
     position: relative;
     text-align: center;
     width:50%;
+    font-weight: bold;
 }
 #signbtn {
     top: 0;
@@ -59,7 +60,7 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, #76aa5a, #ffad06);
+    background: linear-gradient(to right, #2f889a, #84d3e2);
     border-radius: 30px;
     transition: .5s;
 }
@@ -87,6 +88,32 @@
     outline: none;
     background: transparent;
 }
+.input-field .viewpwd{
+    position:absolute;
+    left:90%;
+    width:10%;
+    top:72px;
+}
+.input-field .idduplecheck{
+    position:absolute;
+    left:90%;
+    width:10%;
+    top:22px;
+}
+
+.input-pwd{
+    width:90%;
+    border:none;
+    outline: none;
+    background: transparent;
+}
+.input-id{
+    width:90%;
+    border:none;
+    outline: none;
+    background: transparent;
+}
+
 .submit {
     width: 85%;
     padding: 10px 20px;
@@ -119,4 +146,4 @@
 }
 #register {
     left: 3000px;
-} 
+}

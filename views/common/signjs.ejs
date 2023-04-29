@@ -1,4 +1,16 @@
 <script>
+    $(document).ready(function(){
+        $('.input-field .viewpwd').on('click',function(){
+            $('.input-pwd').toggleClass('active');
+            if($('.input-pwd').hasClass('active')){
+                $(this).attr('class',"fas fa-eye-slash viewpwd")
+                .prev('.input-pwd').attr('type',"text");
+            }else{
+                $(this).attr('class',"fas fa-eye viewpwd")
+                .prev('.input-pwd').attr('type','password');
+            }
+        });
+    });
     link = document.location.href;
     var very = link.split('/');
     console.log(very[very.length-1]);
@@ -9,6 +21,7 @@
     if (very[very.length-1] == "signin"){
         var url = "https://image.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg";
         $(".login").css("background-image", `url(${url})`);
+        $("#togglein").css("color","white");
     }
     else if(very[very.length-1] == "signup"){
         var url = "https://www.top-tier.co.kr/mobile/img/sub/community/title_img.png";
@@ -16,16 +29,21 @@
         $("#login").css('left','3000px');
         $("#register").css('left','50px');
         $("#signbtn").css('left','125px');
+        $("#toggleup").css("color","white");
 
     } 
     function login(){
         x.style.left = "50px";
         y.style.left = "450px";
         z.style.left = "0";
+        $("#togglein").css("color","white");
+        $("#toggleup").css("color","black");
     }
     function register(){
         x.style.left = "-400px";
         y.style.left = "50px";
         z.style.left = "125px";
+        $("#toggleup").css("color","white");
+        $("#togglein").css("color","black");
     }
 </script>

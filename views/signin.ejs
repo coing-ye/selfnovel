@@ -3,6 +3,7 @@
 <head>
     <%- include('common/head') %>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
     <header>
@@ -16,8 +17,8 @@
             <div class ="login_wrap">
                 <div class="button-wrap">
                     <div id="signbtn"></div>
-                    <button type="button" class="togglebtn" onclick="login()">로그인</button>
-                    <button type="button" class="togglebtn" onclick="register()">회원 가입</button>
+                    <button type="button" class="togglebtn" id="togglein" onclick="login()">로그인</button>
+                    <button type="button" class="togglebtn" id="toggleup" onclick="register()">회원 가입</button>
                 </div>
                 <!-- <div class="social-icons">
                     <img src="img/fb.png" alt="facebook">
@@ -26,7 +27,11 @@
                 </div> -->
                 <form id="login" action="" class="input-group">
                     <input type="text" class="input-field" placeholder="아이디를 입력해주세요" required>
-                    <input type="password" class="input-field" placeholder="비밀번호를 입력해주세요" required>
+                    <div class = "input-field">
+                        <input type="password" class="input-pwd"  placeholder="비밀번호를 입력해주세요" required>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    
                     <div class="pwd_remember">
                         <input type="checkbox" class="checkbox"><div>Remember Id</div>
                     </div>
@@ -36,9 +41,14 @@
                     
                 </form>
                 <form id="register" action="" class="input-group">
-                    <input type="text" class="input-field" placeholder="User name or Email" required>
-                    <input type="email" class="input-field" placeholder="Your Email" required>
-                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <div class="input-field">
+                        <input type="text" class="input-id" placeholder="아이디를 입력해주세요" required>
+                        <i class="far fa-check-circle idduplecheck"></i>
+                    </div>
+                    <div class = "input-field">
+                        <input type="password" class="input-pwd"  placeholder="비밀번호를 입력해주세요" required>
+                        <i class="fas fa-eye viewpwd"></i>
+                    </div>
                     <div class = "pwd_remember">
                         <input type="checkbox" class="checkbox"><div>Terms and conditions</div>
                     </div>
