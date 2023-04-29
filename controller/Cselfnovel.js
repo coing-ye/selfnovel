@@ -9,5 +9,5 @@ exports.getsignin = (req,res) =>{
 };
 
 exports.getsignup = (req,res) =>{
-    res.render('signup');
+    res.render('signin');
 }

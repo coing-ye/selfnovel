@@ -8,20 +8,50 @@
     <header>
         <%- include('common/navbar') %>
     </header>
-    <div class = "login_wrapper" style = "display:flex">
-        <div class="login">
-            <div class="login__content">
-                <div class="login__img">
-                    <img src="https://image.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg" alt="user login">
-                    
-                </div>
-            </div>
+    <div class = "login_wrapper" style = "height:90vh;">
+        <div class="login" style="width:50%;">
+   
         </div>
         <div class="login_tem">
-            Login
+            <div class ="login_wrap">
+                <div class="button-wrap">
+                    <div id="signbtn"></div>
+                    <button type="button" class="togglebtn" onclick="login()">로그인</button>
+                    <button type="button" class="togglebtn" onclick="register()">회원 가입</button>
+                </div>
+                <!-- <div class="social-icons">
+                    <img src="img/fb.png" alt="facebook">
+                    <img src="img/tw.png" alt="twitter">
+                    <img src="img/gl.png" alt="google">
+                </div> -->
+                <form id="login" action="" class="input-group">
+                    <input type="text" class="input-field" placeholder="아이디를 입력해주세요" required>
+                    <input type="password" class="input-field" placeholder="비밀번호를 입력해주세요" required>
+                    <div class="pwd_remember">
+                        <input type="checkbox" class="checkbox"><div>Remember Id</div>
+                    </div>
+                    <div>
+                        <button class="submit signin_sb"><b>로그인</b></button>
+                    </div>
+                    
+                </form>
+                <form id="register" action="" class="input-group">
+                    <input type="text" class="input-field" placeholder="User name or Email" required>
+                    <input type="email" class="input-field" placeholder="Your Email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <div class = "pwd_remember">
+                        <input type="checkbox" class="checkbox"><div>Terms and conditions</div>
+                    </div>
+                    <div>
+                        <button class="submit signup_sb"><b>회원 가입</b></button>
+                    </div>
+                    
+                </form>
+            </div>
+
         </div>
     </div>
-
-
+    <%- include('common/signjs') %>
+    <%- include('common/jsinclude') %>
 </body>
 </html>

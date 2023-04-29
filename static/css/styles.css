@@ -10832,7 +10832,8 @@ textarea.form-control-lg {
     border: none ;
     margin:0 5px;
     font-family: 'PT Sans', sans-serif;
-    
+    text-align:center;
+    color:white;
   }
 
 .cd-signin {
@@ -10841,4 +10842,6 @@ textarea.form-control-lg {
     border-radius: 50em ;
     margin:0 5px;
     font-family: 'PT Sans', sans-serif;
+    text-align:center;
+    color:white;
   }

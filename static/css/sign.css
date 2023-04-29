@@ -1,0 +1,122 @@
+.login_wrapper{
+    width:100vw;
+    display:flex;
+}
+.login{
+    width:50%;
+    height:100%;
+    /* background-image: url("https://image.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login_tem{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display:flex; 
+    width:50%; 
+    justify-content:center; 
+    align-items: center;
+}
+
+.login_wrap{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    min-width: 380px;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+.button-wrap {
+    width: 250px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 600px 9px hsl(128, 95%, 77%);
+    border-radius: 30px;
+    display:flex;
+    padding:0;
+}
+.togglebtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    width:50%;
+}
+#signbtn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #76aa5a, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img {
+    width: 30px ;
+    cursor: pointer;
+}
+.input-group {
+    top: 160px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    display:block;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit {
+    width: 85%;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    background-color: yellowgreen;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color:white;
+    justify-content: center;
+}
+
+
+.pwd_remember{
+    display:flex;
+    margin: 20px 0 20px 0;
+    align-items: center;
+}
+.pwd_remember div {
+    color: #777;
+    font-size: 12px;
+    position: absolute;
+    left:18px;
+
+}
+#login {
+    left: 50px;
+}
+#register {
+    left: 3000px;
+} 
